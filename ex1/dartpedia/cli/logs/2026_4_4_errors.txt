@@ -1,1 +1,3 @@
 [2026-04-04 18:17:01.228476 - errors] WARNING: ArgumentException: The first word of input must be a command. 
+[2026-04-04 22:08:53.121929 - errors] WARNING: ArgumentException: The first word of input must be a command. 
+[2026-04-04 22:21:03.021357 - errors] WARNING: ArgumentException: The first word of input must be a command. 
