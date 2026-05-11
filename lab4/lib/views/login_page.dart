@@ -40,7 +40,11 @@ class _LoginPageState extends State<LoginPage> {
             ElevatedButton(
               onPressed: () async {
                 final result = await AuthService().continueWithGoogle();
-                if (result == "Google Login Successful") Navigator.pushReplacementNamed(context, "/home");
+                if (result == "Google Login Successful") {
+                  Navigator.pushReplacementNamed(context, "/home");
+                } else {
+                  ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text(result)));
+                }
               },
               child: const Text("Đăng nhập với Google"),
             ),
